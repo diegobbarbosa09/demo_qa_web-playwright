@@ -1,0 +1,22 @@
+{
+  "name": "demo-qa_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "pw-test --debug",
+    "test:trace": "playwright test --trace on",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  }
+}
