@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/Home-page';
-import { AlertsFramesWindow } from '../pages/alerts-frames-window-page';
+import { AlertsFramesWindow } from '../pages/Alerts-Frames-Window-page';
 
 let homePage: HomePage;
 let alertsFramesWindow: AlertsFramesWindow;
