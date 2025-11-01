@@ -2,7 +2,6 @@ import { expect, Locator, Page } from '@playwright/test';
 import { User } from '../types/User'
 
 export class ElementsPage {
-    readonly menu: Locator;
     readonly subMenu: Locator;
     readonly buttonAdd: Locator;
     readonly firstName: Locator;
@@ -14,7 +13,6 @@ export class ElementsPage {
     readonly buttonSubmit: Locator;
 
     constructor(private readonly page: Page) {
-        this.menu = page.locator('h5', { hasText: 'Elements' });
         this.subMenu = page.locator('span', { hasText: 'Web Tables' });
         this.buttonAdd = page.locator('button#addNewRecordButton');
         this.firstName = page.locator('input#firstName');

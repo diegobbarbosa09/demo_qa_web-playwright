@@ -11,19 +11,16 @@ test.beforeEach(async ({ page }) => {
     elementsPage = new ElementsPage(page);
     
     await homePage.gotoHome();
+    await homePage.menuHome('Elements');    
 })
 
-test.only('deve add novo usuario, editar e deletar', async ({ page }) => {
+test('Adicionar novo usuario, editar e deletar', async ({ page }) => {
     const user = generateFakeUser();
 
-    await homePage.menuHome('Elements');    
-
     await elementsPage.subMenuWebTables();    
-
     await elementsPage.addUser();
     await elementsPage.formsWebTables(user);
     await elementsPage.submit();
-
     await elementsPage.editarPerfil(user);
     await elementsPage.submit();
     await elementsPage.deleteProfile(user);

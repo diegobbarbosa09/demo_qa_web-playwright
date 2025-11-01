@@ -12,7 +12,7 @@ test.beforeEach(async ({ page }) => {
   await homePage.gotoHome();
 })
 
-test('deve preencher formulario Pratice Form', async ({ page }) => {
+test('Preencher formulario Pratice Form', async ({ page }) => {
   await homePage.menuHome('Forms');  
 
   await formsPage.subMenuPracticeForm();
