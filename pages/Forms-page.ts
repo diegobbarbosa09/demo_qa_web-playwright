@@ -50,7 +50,7 @@ export class FormsPage {
         await this.userNumber.fill(user.phone);
         await this.dateBirthDay.type(`${user.birthDate}`);
         await this.hobbies.click({ force: true });
-        await this.artifactFile.setInputFiles(path.join(__dirname, '../fixtures/Teste_QA.txt'));
+        await this.artifactFile.setInputFiles(path.join(process.cwd(), 'fixtures/Teste_QA.txt'));
         await this.currentAddress.fill(user.address);
         await this.state.click();
         await this.page.getByText('Uttar Pradesh').click();
